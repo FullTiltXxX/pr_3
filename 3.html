@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Обмін вмістом полів введення</title>
+</head>
+<body>
+  <input type="text" id="input1" placeholder="Поле введення 1">
+  <input type="text" id="input2" placeholder="Поле введення 2">
+  <button onclick="exchangeContent()">Нажми на меня</button>
+
+  <script> 
+  function exchangeContent() {
+    var input1Value = document.getElementById('input1').value;
+    var input2Value = document.getElementById('input2').value;
+    document.getElementById('input1').value = input2Value;
+    document.getElementById('input2').value = input1Value;
+  }
+    
+  </script>
+</body>
+</html>
